@@ -11,6 +11,8 @@ source:
   patches:
     # we handle lalsuite packages individually
     - requirements-no-lalsuite.patch
+    # exclude test directory as a package
+    - packages.patch
 
 build:
   entry_points:

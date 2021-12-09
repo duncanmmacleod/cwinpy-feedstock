@@ -1,0 +1,15 @@
+diff --git a/setup.cfg b/setup.cfg
+index c394450..7969f83 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -48,6 +48,10 @@ install_requires =
+ include_package_data = True
+ packages = find:
+ 
++[options.packages.find]
++exclude =
++    test
++
+ [options.package_data]
+ cwinpy =
+     data/S5/hw_inj/*.par
