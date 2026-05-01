@@ -1,18 +1,18 @@
-From 691746d2efbd22c2c4b4e2afce30f4aa09e8dae3 Mon Sep 17 00:00:00 2001
+From 0e591d6c1097f3d2f139f32c62d3ac5ed0761715 Mon Sep 17 00:00:00 2001
 From: Duncan Macleod <macleoddm@cardiff.ac.uk>
 Date: Fri, 4 Apr 2025 11:58:03 +0100
-Subject: [PATCH 2/2] Handle no internet connection in test
+Subject: [PATCH 2/3] Handle no internet connection in test
 
 ---
  cwinpy/test/test_heterodyne.py | 7 ++++---
  1 file changed, 4 insertions(+), 3 deletions(-)
 
 diff --git a/cwinpy/test/test_heterodyne.py b/cwinpy/test/test_heterodyne.py
-index 1ce0494..13bed6a 100644
+index bd1b825..1452cab 100644
 --- a/cwinpy/test/test_heterodyne.py
 +++ b/cwinpy/test/test_heterodyne.py
-@@ -723,9 +723,10 @@ transientTau = {tau}
-             starttime=1126259460, endtime=1126259464, host=GWOSC_DEFAULT_HOST, site="H1"
+@@ -729,9 +729,10 @@ transientTau = {tau}
+             site="H1",
          )
  
 -        assert int(data.t0.value) == 1126259460

@@ -1,0 +1,25 @@
+From 29993b8e99be1b7ba67f5472f9872f3572eec7c7 Mon Sep 17 00:00:00 2001
+From: Duncan Macleod <macleoddm@cardiff.ac.uk>
+Date: Fri, 1 May 2026 13:18:42 +0100
+Subject: [PATCH 3/3] test: set urltype when testing frame_cache
+
+(cherry picked from commit 991cc8e0247618b20bb5d9217ffe4d436e097fd1)
+---
+ cwinpy/test/test_info.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/cwinpy/test/test_info.py b/cwinpy/test/test_info.py
+index 6c6bf69..1edaad0 100644
+--- a/cwinpy/test/test_info.py
++++ b/cwinpy/test/test_info.py
+@@ -56,6 +56,7 @@ def test_frame_cache():
+                                 channel,
+                                 frametype=frtype,
+                                 host=host,
++                                urltype="osdf",
+                             )
+ 
+                             # make sure a list of frame files has been produced
+-- 
+2.39.5
+

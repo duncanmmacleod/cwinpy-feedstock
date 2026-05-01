@@ -1,7 +1,7 @@
-From e7fa21863e460b2a1e8e2dc581f46a557bf02ff0 Mon Sep 17 00:00:00 2001
+From 445c2a2ee1559b619ae1d126b47b3bd819f935a4 Mon Sep 17 00:00:00 2001
 From: Duncan Macleod <macleoddm@cardiff.ac.uk>
 Date: Fri, 4 Apr 2025 11:57:17 +0100
-Subject: [PATCH 1/2] Remove lalsuite Python requirement
+Subject: [PATCH 1/3] Remove lalsuite Python requirement
 
 The conda package depends on individual subpackages of LALSuite
 ---
@@ -9,10 +9,10 @@ The conda package depends on individual subpackages of LALSuite
  1 file changed, 1 deletion(-)
 
 diff --git a/pyproject.toml b/pyproject.toml
-index a766cd3..8541964 100644
+index 335d282..25adddd 100644
 --- a/pyproject.toml
 +++ b/pyproject.toml
-@@ -49,7 +49,6 @@ dependencies = [
+@@ -52,7 +52,6 @@ dependencies = [
      "gwpy >= 2.1.1",
      "healpy",
      "htcondor >= 10.0.0",

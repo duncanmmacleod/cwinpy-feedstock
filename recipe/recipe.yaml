@@ -34,9 +34,11 @@ source:
     - patches/0001-Remove-lalsuite-Python-requirement.patch
     # patch test to survive no internet connection
     - patches/0002-Handle-no-internet-connection-in-test.patch
+    # backport https://git.ligo.org/cwinpy/cwinpy/-/merge_requests/216
+    - patches/0003-test-set-urltype-when-testing-frame_cache.patch
 
 build:
-  number: 0
+  number: 1
   python:
     entry_points:
       - cwinpy_generate_summary_pages = cwinpy.pe.summary:generate_summary_pages_cli
